@@ -21,6 +21,11 @@ class FilmDetailsViewController: UIViewController {
         setupUI()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+    }
+
     func setupUI() {
         filmNameLabel.text = film?.name
         releaseDateLabel.text = film?.releaseDate

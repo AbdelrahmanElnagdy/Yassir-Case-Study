@@ -20,9 +20,15 @@ class FilmsListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        AppCommon.shared.showLoadingLogo(self)
         viewModel = FilmsViewModel()
         setupTableView()
         initViewModel()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
     }
 
     func setupTableView() {

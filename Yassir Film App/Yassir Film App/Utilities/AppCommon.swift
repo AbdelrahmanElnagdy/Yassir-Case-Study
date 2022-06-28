@@ -71,4 +71,31 @@ class AppCommon: NSObject {
         imagetoAnimate.removeFromSuperview()
     }
 
+    func animatedSplash(_ viewController: UIViewController, animatedImage: UIImageView) {
+        UIView.animate(withDuration: 2) {
+            let size = viewController.view.frame.size.width * 3
+            let newX = size - viewController.view.frame.size.width
+            let newY = viewController.view.frame.size.width - size
+            animatedImage.frame = CGRect(
+                x: -(newX/2),
+                y: newY/2,
+                width: size,
+                height: size
+            )
+        }
+        UIView.animate(withDuration: 2.5, animations: {
+            animatedImage.alpha = 0
+        }, completion: { finished in
+            if finished {
+                DispatchQueue.main.async {
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let filmListVC = storyboard.instantiateViewController(withIdentifier: "FilmsListViewController") as? FilmsListViewController
+                    filmListVC?.modalTransitionStyle = .crossDissolve
+                    if !(viewController.navigationController?.topViewController is FilmsListViewController) {
+                    viewController.navigationController?.pushViewController(filmListVC ?? UIViewController(), animated: true)
+                    }
+                }
+            }
+        })
+    }
 }

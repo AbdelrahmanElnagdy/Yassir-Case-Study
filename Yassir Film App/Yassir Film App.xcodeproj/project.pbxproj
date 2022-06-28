@@ -34,6 +34,7 @@
 		BC767FD82868D10E008545E7 /* FilmDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC767FD72868D10E008545E7 /* FilmDetailsViewController.swift */; };
 		BC767FDB286B25AC008545E7 /* FilmsListViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = BC71D3162864FF1800DA48A3 /* FilmsListViewController.swift */; };
 		BC767FDE286B284A008545E7 /* APIRouter.swift in Resources */ = {isa = PBXBuildFile; fileRef = BC71D3662865005B00DA48A3 /* APIRouter.swift */; };
+		BC767FE0286B2CEB008545E7 /* AnimatedSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC767FDF286B2CEB008545E7 /* AnimatedSplashViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		BC71D3652865005B00DA48A3 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		BC71D3662865005B00DA48A3 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		BC767FD72868D10E008545E7 /* FilmDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsViewController.swift; sourceTree = "<group>"; };
+		BC767FDF286B2CEB008545E7 /* AnimatedSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSplashViewController.swift; sourceTree = "<group>"; };
 		C946AE365252EDF068B58673 /* Pods-Yassir Film App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yassir Film App.release.xcconfig"; path = "Target Support Files/Pods-Yassir Film App/Pods-Yassir Film App.release.xcconfig"; sourceTree = "<group>"; };
 		FE4DEFFBAD3A65C3AED98401 /* Pods-Yassir Film App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yassir Film App.debug.xcconfig"; path = "Target Support Files/Pods-Yassir Film App/Pods-Yassir Film App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -206,6 +208,7 @@
 				BC71D34C2864FFEE00DA48A3 /* FilmTableViewCell.xib */,
 				BC767FD72868D10E008545E7 /* FilmDetailsViewController.swift */,
 				BC71D3162864FF1800DA48A3 /* FilmsListViewController.swift */,
+				BC767FDF286B2CEB008545E7 /* AnimatedSplashViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				BC71D3472864FFD600DA48A3 /* AppCommon.swift in Sources */,
 				BC71D3172864FF1800DA48A3 /* FilmsListViewController.swift in Sources */,
 				BC71D3612865004400DA48A3 /* FilmsDataProvider.swift in Sources */,
+				BC767FE0286B2CEB008545E7 /* AnimatedSplashViewController.swift in Sources */,
 				BC71D35D2865002900DA48A3 /* FilmsModel.swift in Sources */,
 				BC71D3132864FF1800DA48A3 /* AppDelegate.swift in Sources */,
 				BC71D3152864FF1800DA48A3 /* SceneDelegate.swift in Sources */,
