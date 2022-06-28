@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2036243512903FB094ED31CD /* Pods_Yassir_Film_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C0A9D0EDBED7168E574CE9 /* Pods_Yassir_Film_App.framework */; };
+		BC71D3132864FF1800DA48A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3122864FF1800DA48A3 /* AppDelegate.swift */; };
+		BC71D3152864FF1800DA48A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3142864FF1800DA48A3 /* SceneDelegate.swift */; };
+		BC71D3172864FF1800DA48A3 /* FilmsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3162864FF1800DA48A3 /* FilmsListViewController.swift */; };
+		BC71D31A2864FF1800DA48A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC71D3182864FF1800DA48A3 /* Main.storyboard */; };
+		BC71D31C2864FF1B00DA48A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC71D31B2864FF1B00DA48A3 /* Assets.xcassets */; };
+		BC71D31F2864FF1B00DA48A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC71D31D2864FF1B00DA48A3 /* LaunchScreen.storyboard */; };
+		BC71D32A2864FF1B00DA48A3 /* Yassir_Film_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3292864FF1B00DA48A3 /* Yassir_Film_AppTests.swift */; };
+		BC71D3342864FF1C00DA48A3 /* Yassir_Film_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3332864FF1C00DA48A3 /* Yassir_Film_AppUITests.swift */; };
+		BC71D3362864FF1C00DA48A3 /* Yassir_Film_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3352864FF1C00DA48A3 /* Yassir_Film_AppUITestsLaunchTests.swift */; };
+		BC71D3472864FFD600DA48A3 /* AppCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3442864FFD600DA48A3 /* AppCommon.swift */; };
+		BC71D3482864FFD600DA48A3 /* LocalizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3452864FFD600DA48A3 /* LocalizationManager.swift */; };
+		BC71D3492864FFD600DA48A3 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3462864FFD600DA48A3 /* URLs.swift */; };
+		BC71D34D2864FFEF00DA48A3 /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D34B2864FFEE00DA48A3 /* FilmTableViewCell.swift */; };
+		BC71D34E2864FFEF00DA48A3 /* FilmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC71D34C2864FFEE00DA48A3 /* FilmTableViewCell.xib */; };
+		BC71D3512865000100DA48A3 /* UIModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3502865000100DA48A3 /* UIModelMapper.swift */; };
+		BC71D3542865001300DA48A3 /* FilmsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3532865001300DA48A3 /* FilmsViewModel.swift */; };
+		BC71D35B2865002900DA48A3 /* FilmsUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3572865002900DA48A3 /* FilmsUIModel.swift */; };
+		BC71D35D2865002900DA48A3 /* FilmsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3592865002900DA48A3 /* FilmsModel.swift */; };
+		BC71D3612865004400DA48A3 /* FilmsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D35F2865004400DA48A3 /* FilmsDataProvider.swift */; };
+		BC71D3622865004400DA48A3 /* FilmsDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3602865004400DA48A3 /* FilmsDataProviderProtocol.swift */; };
+		BC71D3672865005B00DA48A3 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3642865005B00DA48A3 /* NetworkClient.swift */; };
+		BC71D3682865005B00DA48A3 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3652865005B00DA48A3 /* NetworkError.swift */; };
+		BC71D3692865005B00DA48A3 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71D3662865005B00DA48A3 /* APIRouter.swift */; };
+		BC767FD82868D10E008545E7 /* FilmDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC767FD72868D10E008545E7 /* FilmDetailsViewController.swift */; };
+		BC767FDB286B25AC008545E7 /* FilmsListViewController.swift in Resources */ = {isa = PBXBuildFile; fileRef = BC71D3162864FF1800DA48A3 /* FilmsListViewController.swift */; };
+		BC767FDE286B284A008545E7 /* APIRouter.swift in Resources */ = {isa = PBXBuildFile; fileRef = BC71D3662865005B00DA48A3 /* APIRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC71D3262864FF1B00DA48A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC71D3072864FF1800DA48A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC71D30E2864FF1800DA48A3;
+			remoteInfo = "Yassir Film App";
+		};
+		BC71D3302864FF1C00DA48A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC71D3072864FF1800DA48A3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC71D30E2864FF1800DA48A3;
+			remoteInfo = "Yassir Film App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50C0A9D0EDBED7168E574CE9 /* Pods_Yassir_Film_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yassir_Film_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC71D30F2864FF1800DA48A3 /* Yassir Film App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yassir Film App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC71D3122864FF1800DA48A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC71D3142864FF1800DA48A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BC71D3162864FF1800DA48A3 /* FilmsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmsListViewController.swift; sourceTree = "<group>"; };
+		BC71D3192864FF1800DA48A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC71D31B2864FF1B00DA48A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC71D31E2864FF1B00DA48A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC71D3202864FF1B00DA48A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC71D3252864FF1B00DA48A3 /* Yassir Film AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yassir Film AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC71D3292864FF1B00DA48A3 /* Yassir_Film_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yassir_Film_AppTests.swift; sourceTree = "<group>"; };
+		BC71D32F2864FF1C00DA48A3 /* Yassir Film AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Yassir Film AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC71D3332864FF1C00DA48A3 /* Yassir_Film_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yassir_Film_AppUITests.swift; sourceTree = "<group>"; };
+		BC71D3352864FF1C00DA48A3 /* Yassir_Film_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yassir_Film_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BC71D3442864FFD600DA48A3 /* AppCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCommon.swift; sourceTree = "<group>"; };
+		BC71D3452864FFD600DA48A3 /* LocalizationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationManager.swift; sourceTree = "<group>"; };
+		BC71D3462864FFD600DA48A3 /* URLs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		BC71D34B2864FFEE00DA48A3 /* FilmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
+		BC71D34C2864FFEE00DA48A3 /* FilmTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilmTableViewCell.xib; sourceTree = "<group>"; };
+		BC71D3502865000100DA48A3 /* UIModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIModelMapper.swift; sourceTree = "<group>"; };
+		BC71D3532865001300DA48A3 /* FilmsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmsViewModel.swift; sourceTree = "<group>"; };
+		BC71D3572865002900DA48A3 /* FilmsUIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmsUIModel.swift; sourceTree = "<group>"; };
+		BC71D3592865002900DA48A3 /* FilmsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmsModel.swift; sourceTree = "<group>"; };
+		BC71D35F2865004400DA48A3 /* FilmsDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmsDataProvider.swift; sourceTree = "<group>"; };
+		BC71D3602865004400DA48A3 /* FilmsDataProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmsDataProviderProtocol.swift; sourceTree = "<group>"; };
+		BC71D3642865005B00DA48A3 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		BC71D3652865005B00DA48A3 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		BC71D3662865005B00DA48A3 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		BC767FD72868D10E008545E7 /* FilmDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsViewController.swift; sourceTree = "<group>"; };
+		C946AE365252EDF068B58673 /* Pods-Yassir Film App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yassir Film App.release.xcconfig"; path = "Target Support Files/Pods-Yassir Film App/Pods-Yassir Film App.release.xcconfig"; sourceTree = "<group>"; };
+		FE4DEFFBAD3A65C3AED98401 /* Pods-Yassir Film App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yassir Film App.debug.xcconfig"; path = "Target Support Files/Pods-Yassir Film App/Pods-Yassir Film App.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC71D30C2864FF1800DA48A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2036243512903FB094ED31CD /* Pods_Yassir_Film_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC71D3222864FF1B00DA48A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC71D32C2864FF1B00DA48A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5A312FD4F2A6923D33F4CE28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE4DEFFBAD3A65C3AED98401 /* Pods-Yassir Film App.debug.xcconfig */,
+				C946AE365252EDF068B58673 /* Pods-Yassir Film App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BC71D3062864FF1800DA48A3 = {
+			isa = PBXGroup;
+			children = (
+				BC71D3112864FF1800DA48A3 /* Yassir Film App */,
+				BC71D3282864FF1B00DA48A3 /* Yassir Film AppTests */,
+				BC71D3322864FF1C00DA48A3 /* Yassir Film AppUITests */,
+				BC71D3102864FF1800DA48A3 /* Products */,
+				5A312FD4F2A6923D33F4CE28 /* Pods */,
+				E9E451463C7E833CAE47F964 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC71D3102864FF1800DA48A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC71D30F2864FF1800DA48A3 /* Yassir Film App.app */,
+				BC71D3252864FF1B00DA48A3 /* Yassir Film AppTests.xctest */,
+				BC71D32F2864FF1C00DA48A3 /* Yassir Film AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC71D3112864FF1800DA48A3 /* Yassir Film App */ = {
+			isa = PBXGroup;
+			children = (
+				BC71D3632865004A00DA48A3 /* NetworkClient */,
+				BC71D35E2865002F00DA48A3 /* DataProvider */,
+				BC71D3552865001900DA48A3 /* Models */,
+				BC71D3522865000800DA48A3 /* ViewModels */,
+				BC71D34F2864FFF800DA48A3 /* Mappers */,
+				BC71D34A2864FFDF00DA48A3 /* Views */,
+				BC71D3432864FFC900DA48A3 /* Utilities */,
+				BC71D3422864FFBC00DA48A3 /* Resources */,
+				BC71D3122864FF1800DA48A3 /* AppDelegate.swift */,
+				BC71D3142864FF1800DA48A3 /* SceneDelegate.swift */,
+				BC71D3182864FF1800DA48A3 /* Main.storyboard */,
+				BC71D31B2864FF1B00DA48A3 /* Assets.xcassets */,
+				BC71D31D2864FF1B00DA48A3 /* LaunchScreen.storyboard */,
+				BC71D3202864FF1B00DA48A3 /* Info.plist */,
+			);
+			path = "Yassir Film App";
+			sourceTree = "<group>";
+		};
+		BC71D3282864FF1B00DA48A3 /* Yassir Film AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC71D3292864FF1B00DA48A3 /* Yassir_Film_AppTests.swift */,
+			);
+			path = "Yassir Film AppTests";
+			sourceTree = "<group>";
+		};
+		BC71D3322864FF1C00DA48A3 /* Yassir Film AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC71D3332864FF1C00DA48A3 /* Yassir_Film_AppUITests.swift */,
+				BC71D3352864FF1C00DA48A3 /* Yassir_Film_AppUITestsLaunchTests.swift */,
+			);
+			path = "Yassir Film AppUITests";
+			sourceTree = "<group>";
+		};
+		BC71D3422864FFBC00DA48A3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC71D3462864FFD600DA48A3 /* URLs.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BC71D3432864FFC900DA48A3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BC71D3442864FFD600DA48A3 /* AppCommon.swift */,
+				BC71D3452864FFD600DA48A3 /* LocalizationManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BC71D34A2864FFDF00DA48A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BC71D34B2864FFEE00DA48A3 /* FilmTableViewCell.swift */,
+				BC71D34C2864FFEE00DA48A3 /* FilmTableViewCell.xib */,
+				BC767FD72868D10E008545E7 /* FilmDetailsViewController.swift */,
+				BC71D3162864FF1800DA48A3 /* FilmsListViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BC71D34F2864FFF800DA48A3 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				BC71D3502865000100DA48A3 /* UIModelMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		BC71D3522865000800DA48A3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BC71D3532865001300DA48A3 /* FilmsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BC71D3552865001900DA48A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC71D3592865002900DA48A3 /* FilmsModel.swift */,
+				BC71D3572865002900DA48A3 /* FilmsUIModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC71D35E2865002F00DA48A3 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				BC71D35F2865004400DA48A3 /* FilmsDataProvider.swift */,
+				BC71D3602865004400DA48A3 /* FilmsDataProviderProtocol.swift */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		BC71D3632865004A00DA48A3 /* NetworkClient */ = {
+			isa = PBXGroup;
+			children = (
+				BC71D3662865005B00DA48A3 /* APIRouter.swift */,
+				BC71D3642865005B00DA48A3 /* NetworkClient.swift */,
+				BC71D3652865005B00DA48A3 /* NetworkError.swift */,
+			);
+			path = NetworkClient;
+			sourceTree = "<group>";
+		};
+		E9E451463C7E833CAE47F964 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50C0A9D0EDBED7168E574CE9 /* Pods_Yassir_Film_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC71D30E2864FF1800DA48A3 /* Yassir Film App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC71D3392864FF1C00DA48A3 /* Build configuration list for PBXNativeTarget "Yassir Film App" */;
+			buildPhases = (
+				E94D7570C94BAD14B8CCA2D6 /* [CP] Check Pods Manifest.lock */,
+				BC71D30B2864FF1800DA48A3 /* Sources */,
+				BC71D30C2864FF1800DA48A3 /* Frameworks */,
+				BC71D30D2864FF1800DA48A3 /* Resources */,
+				E4EDDB1073D2077E7CF54388 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Yassir Film App";
+			productName = "Yassir Film App";
+			productReference = BC71D30F2864FF1800DA48A3 /* Yassir Film App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC71D3242864FF1B00DA48A3 /* Yassir Film AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC71D33C2864FF1C00DA48A3 /* Build configuration list for PBXNativeTarget "Yassir Film AppTests" */;
+			buildPhases = (
+				BC71D3212864FF1B00DA48A3 /* Sources */,
+				BC71D3222864FF1B00DA48A3 /* Frameworks */,
+				BC71D3232864FF1B00DA48A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC71D3272864FF1B00DA48A3 /* PBXTargetDependency */,
+			);
+			name = "Yassir Film AppTests";
+			productName = "Yassir Film AppTests";
+			productReference = BC71D3252864FF1B00DA48A3 /* Yassir Film AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC71D32E2864FF1B00DA48A3 /* Yassir Film AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC71D33F2864FF1C00DA48A3 /* Build configuration list for PBXNativeTarget "Yassir Film AppUITests" */;
+			buildPhases = (
+				BC71D32B2864FF1B00DA48A3 /* Sources */,
+				BC71D32C2864FF1B00DA48A3 /* Frameworks */,
+				BC71D32D2864FF1B00DA48A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC71D3312864FF1C00DA48A3 /* PBXTargetDependency */,
+			);
+			name = "Yassir Film AppUITests";
+			productName = "Yassir Film AppUITests";
+			productReference = BC71D32F2864FF1C00DA48A3 /* Yassir Film AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC71D3072864FF1800DA48A3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					BC71D30E2864FF1800DA48A3 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					BC71D3242864FF1B00DA48A3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = BC71D30E2864FF1800DA48A3;
+					};
+					BC71D32E2864FF1B00DA48A3 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = BC71D30E2864FF1800DA48A3;
+					};
+				};
+			};
+			buildConfigurationList = BC71D30A2864FF1800DA48A3 /* Build configuration list for PBXProject "Yassir Film App" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC71D3062864FF1800DA48A3;
+			productRefGroup = BC71D3102864FF1800DA48A3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC71D30E2864FF1800DA48A3 /* Yassir Film App */,
+				BC71D3242864FF1B00DA48A3 /* Yassir Film AppTests */,
+				BC71D32E2864FF1B00DA48A3 /* Yassir Film AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC71D30D2864FF1800DA48A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC767FDE286B284A008545E7 /* APIRouter.swift in Resources */,
+				BC767FDB286B25AC008545E7 /* FilmsListViewController.swift in Resources */,
+				BC71D31F2864FF1B00DA48A3 /* LaunchScreen.storyboard in Resources */,
+				BC71D34E2864FFEF00DA48A3 /* FilmTableViewCell.xib in Resources */,
+				BC71D31C2864FF1B00DA48A3 /* Assets.xcassets in Resources */,
+				BC71D31A2864FF1800DA48A3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC71D3232864FF1B00DA48A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC71D32D2864FF1B00DA48A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4EDDB1073D2077E7CF54388 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yassir Film App/Pods-Yassir Film App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Yassir Film App/Pods-Yassir Film App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Yassir Film App/Pods-Yassir Film App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E94D7570C94BAD14B8CCA2D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Yassir Film App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC71D30B2864FF1800DA48A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC71D3682865005B00DA48A3 /* NetworkError.swift in Sources */,
+				BC767FD82868D10E008545E7 /* FilmDetailsViewController.swift in Sources */,
+				BC71D3692865005B00DA48A3 /* APIRouter.swift in Sources */,
+				BC71D34D2864FFEF00DA48A3 /* FilmTableViewCell.swift in Sources */,
+				BC71D35B2865002900DA48A3 /* FilmsUIModel.swift in Sources */,
+				BC71D3482864FFD600DA48A3 /* LocalizationManager.swift in Sources */,
+				BC71D3622865004400DA48A3 /* FilmsDataProviderProtocol.swift in Sources */,
+				BC71D3512865000100DA48A3 /* UIModelMapper.swift in Sources */,
+				BC71D3542865001300DA48A3 /* FilmsViewModel.swift in Sources */,
+				BC71D3672865005B00DA48A3 /* NetworkClient.swift in Sources */,
+				BC71D3492864FFD600DA48A3 /* URLs.swift in Sources */,
+				BC71D3472864FFD600DA48A3 /* AppCommon.swift in Sources */,
+				BC71D3172864FF1800DA48A3 /* FilmsListViewController.swift in Sources */,
+				BC71D3612865004400DA48A3 /* FilmsDataProvider.swift in Sources */,
+				BC71D35D2865002900DA48A3 /* FilmsModel.swift in Sources */,
+				BC71D3132864FF1800DA48A3 /* AppDelegate.swift in Sources */,
+				BC71D3152864FF1800DA48A3 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC71D3212864FF1B00DA48A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC71D32A2864FF1B00DA48A3 /* Yassir_Film_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC71D32B2864FF1B00DA48A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC71D3342864FF1C00DA48A3 /* Yassir_Film_AppUITests.swift in Sources */,
+				BC71D3362864FF1C00DA48A3 /* Yassir_Film_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC71D3272864FF1B00DA48A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC71D30E2864FF1800DA48A3 /* Yassir Film App */;
+			targetProxy = BC71D3262864FF1B00DA48A3 /* PBXContainerItemProxy */;
+		};
+		BC71D3312864FF1C00DA48A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC71D30E2864FF1800DA48A3 /* Yassir Film App */;
+			targetProxy = BC71D3302864FF1C00DA48A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC71D3182864FF1800DA48A3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC71D3192864FF1800DA48A3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC71D31D2864FF1B00DA48A3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC71D31E2864FF1B00DA48A3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC71D3372864FF1C00DA48A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC71D3382864FF1C00DA48A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC71D33A2864FF1C00DA48A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE4DEFFBAD3A65C3AED98401 /* Pods-Yassir Film App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Yassir Film App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Yassir.nagdy.Yassir-Film-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC71D33B2864FF1C00DA48A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C946AE365252EDF068B58673 /* Pods-Yassir Film App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Yassir Film App/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Yassir.nagdy.Yassir-Film-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC71D33D2864FF1C00DA48A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Yassir.nagdy.Yassir-Film-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yassir Film App.app/Yassir Film App";
+			};
+			name = Debug;
+		};
+		BC71D33E2864FF1C00DA48A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Yassir.nagdy.Yassir-Film-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yassir Film App.app/Yassir Film App";
+			};
+			name = Release;
+		};
+		BC71D3402864FF1C00DA48A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Yassir.nagdy.Yassir-Film-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Yassir Film App";
+			};
+			name = Debug;
+		};
+		BC71D3412864FF1C00DA48A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Yassir.nagdy.Yassir-Film-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Yassir Film App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC71D30A2864FF1800DA48A3 /* Build configuration list for PBXProject "Yassir Film App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC71D3372864FF1C00DA48A3 /* Debug */,
+				BC71D3382864FF1C00DA48A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC71D3392864FF1C00DA48A3 /* Build configuration list for PBXNativeTarget "Yassir Film App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC71D33A2864FF1C00DA48A3 /* Debug */,
+				BC71D33B2864FF1C00DA48A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC71D33C2864FF1C00DA48A3 /* Build configuration list for PBXNativeTarget "Yassir Film AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC71D33D2864FF1C00DA48A3 /* Debug */,
+				BC71D33E2864FF1C00DA48A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC71D33F2864FF1C00DA48A3 /* Build configuration list for PBXNativeTarget "Yassir Film AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC71D3402864FF1C00DA48A3 /* Debug */,
+				BC71D3412864FF1C00DA48A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC71D3072864FF1800DA48A3 /* Project object */;
+}

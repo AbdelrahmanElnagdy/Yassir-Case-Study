@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FilmTableViewCell" rowHeight="162" id="KGk-i7-Jjw" customClass="FilmTableViewCell" customModule="Yassir_Film_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3hL-6n-qG1">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="162"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQk-vJ-LAT">
+                        <rect key="frame" x="168" y="58" width="144" height="22.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="16.399999618530273"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ss0-Xa-Dx6">
+                        <rect key="frame" x="168" y="88.5" width="128" height="22.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="SinhalaSangamMN" family="Sinhala Sangam MN" pointSize="16.399999618530273"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="PQk-vJ-LAT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="58" id="3x2-wa-VTp"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ss0-Xa-Dx6" secondAttribute="trailing" constant="8" id="89E-is-Hey"/>
+                    <constraint firstAttribute="bottom" secondItem="3hL-6n-qG1" secondAttribute="bottom" id="Egj-H3-tAL"/>
+                    <constraint firstItem="3hL-6n-qG1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Ldu-Fx-2h0"/>
+                    <constraint firstItem="PQk-vJ-LAT" firstAttribute="leading" secondItem="3hL-6n-qG1" secondAttribute="trailing" constant="8" id="Qaw-Me-IvD"/>
+                    <constraint firstItem="ss0-Xa-Dx6" firstAttribute="leading" secondItem="3hL-6n-qG1" secondAttribute="trailing" constant="8" id="QtB-hU-FFW"/>
+                    <constraint firstAttribute="trailing" secondItem="PQk-vJ-LAT" secondAttribute="trailing" constant="8" id="RLI-gf-SeL"/>
+                    <constraint firstItem="3hL-6n-qG1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZWf-jm-5tM"/>
+                    <constraint firstItem="3hL-6n-qG1" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.5" id="cRL-Qd-Hgw"/>
+                    <constraint firstItem="ss0-Xa-Dx6" firstAttribute="top" secondItem="PQk-vJ-LAT" secondAttribute="bottom" constant="8" id="fn8-uH-m2h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="filmImageView" destination="3hL-6n-qG1" id="be0-Yi-59P"/>
+                <outlet property="nameLabel" destination="PQk-vJ-LAT" id="ggf-r9-VHD"/>
+                <outlet property="releaseDateLabel" destination="ss0-Xa-Dx6" id="vAd-nu-sDI"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="111.16071428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
