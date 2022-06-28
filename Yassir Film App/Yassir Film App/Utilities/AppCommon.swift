@@ -71,6 +71,10 @@ class AppCommon: NSObject {
         imagetoAnimate.removeFromSuperview()
     }
 
+    /// A function that is in charge of animating the logo in splash screen
+    ///   - Parameters:
+    ///     - viewController: an instance of *UIViewController* which represnts the controller which will animate the logo
+    ///     - animatedImage: an instance of *UIImageView* which represents the logo image that will be animated
     func animatedSplash(_ viewController: UIViewController, animatedImage: UIImageView) {
         UIView.animate(withDuration: 2) {
             let size = viewController.view.frame.size.width * 3
